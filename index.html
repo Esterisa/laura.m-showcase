@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laura M. Showcase</title>
+    <!-- Link style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css"
+  </head>
+  <body>
+    <!-- Menu -->
+    <header>
+      <h1>Laura.M</h1>
+
+      <ul>
+        <li><a onclick="closeMenuLink()" href="#home">Home</a></li>
+        <li><a onclick="closeMenuLink()" href="#works">Trabalhos</a></li>
+        <li><a onclick="closeMenuLink()" href="#contacts">Contate-me</a></li>
+      </ul>
+      <img
+        onclick="cliqueMenu()"
+        src="assets/img/icons/menu.png"
+        alt="Ícone do Menu"
+      />
+    </header>
+
+    <!-- CARD VISIT -->
+    <section id="home">
+      <h1>
+        <b>Laura Mendes </b>- Explorando Criatividade, <br />
+        Composição e Expressão Visual
+      </h1>
+
+      <p>
+        Olá, sou Laura Mendes, uma entusiasta do design com sede em Lisboa,
+        Portugal. Minhas habilidades abrangem desde a manipulação criativa de
+        imagens no Photoshop até a composição musical e a escrita expressiva.
+        Minha paixão pelo design gráfico me conduz a explorar formas de
+        transformar conceitos em realidade visual. Como alguém profundamente
+        comprometida em aprimorar a estética e a funcionalidade, estou sempre em
+        busca de aprender algo novo diariamente, enriquecendo meu repertório
+        criativo.
+      </p>
+    </section>
+    <!--MY WoRKS-->
+    <div id="works">
+      <h1>Meus trabalhos recentes</h1>
+      <br />
+      <!-- LINE IMG ONE -->
+      <figure>
+        <img
+          class="imgOne"
+          src="assets/img/computerPink.webp"
+          alt="imagem de computador rosa"
+        />
+        <!-- LINE IMG TWO -->
+        <img
+          class="imgTwo"
+          src="assets/img/cityCyberpunk.jpg"
+          alt="cidade Cyberpunk"
+        />
+      </figure>
+      <figure>
+        <!-- LINE IMG THREE -->
+        <img class="imgTwo" src="assets/img/darkCamp.png" alt="campo escuro" />
+        <!-- LINE IMG FOUR -->
+        <img class="imgOne" src="assets/img/milk.jpg" alt="caixa de leite" />
+      </figure>
+    </div>
+    <!-- RODAPÉ DO SITE -->
+    <footer id="contacts">
+      <h1>Vamos conectar!🖐🏼</h1>
+      <p>
+        Estou ansiosa para receber suas mensagens, seja para explorar
+        oportunidades empolgantes <br />ou para trocar algumas palavras amigas!
+        Sinta-se à vontade para entrar em contato.
+      </p>
+      <ul id="linksMenu">
+        <!-- LINKEDIN-->
+        <li>
+          <a target="_blank" href="#" title="Linkedin"
+            ><img src="assets/img/icons/linkedin.png" alt="Linkedin"
+          /></a>
+        </li>
+        <!-- FACEBOOK -->
+        <li>
+          <a target="_blank" href="#" title="Facebook"
+            ><img src="assets/img/icons/facebook.png" alt="Facebook"
+          /></a>
+        </li>
+        <!-- INSTAGRAM -->
+        <li>
+          <a target="_blank" href="#" title="Instagram"
+            ><img src="assets/img/icons/instagram.png" alt="Instagram"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- JAVA SCRIPT -->
+    <script>
+      // OPEN MENU LINK
+      function cliqueMenu() {
+        if (linksMenu.style.display == 'flex') {
+          linksMenu.style.display = 'none'
+        } else {
+          linksMenu.style.display = 'flex'
+        }
+      }
+
+      // CLOSE MENU LINK
+      function closeMenuLink() {
+        if (window.screen.width < 769) {
+          linksMenu.style.display = 'none'
+        }
+      }
+    </script>
+  </body>
+</html>
